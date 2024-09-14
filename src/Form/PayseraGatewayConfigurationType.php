@@ -39,6 +39,9 @@ final class PayseraGatewayConfigurationType extends AbstractType
                     ]),
                 ],
             ])
+            ->add('payment', TextType::class, [
+                'label' => 'sylius.form.gateway_configuration.paysera.payment',
+            ])
             ->add('test', CheckboxType::class, [
                 'label' => 'sylius.form.gateway_configuration.paysera.test',
             ])

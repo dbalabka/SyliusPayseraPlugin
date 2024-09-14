@@ -12,6 +12,7 @@ class CaptureAction extends BaseCaptureAction
 {
     public function __construct($mocked = false)
     {
+        parent::__construct($mocked);
         $mocked ? $this->apiClass = MockedApi::class : $this->apiClass = Api::class;
     }
     /**

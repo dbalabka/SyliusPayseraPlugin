@@ -5,5 +5,6 @@ sylius:
         project_id: Project id
         sign_password: Project password
         test: Test mode
+        payment: Payment method
   payum_gateway_factory:
     paysera: Paysera checkout
